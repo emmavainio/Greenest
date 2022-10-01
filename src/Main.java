@@ -26,8 +26,9 @@ public class Main {
         boolean finnsNamnet = false;
         for (Växt v: växt) {
             if (s.equalsIgnoreCase(v.getNamn())) {
-                System.out.println(v.getNamn() + " behöver " + v.vätskeMängd
-                        + " liter " + v.getVätskeTyp().toLowerCase());
+                JOptionPane.showMessageDialog(null,
+                        v.getNamn() + " behöver " + v.vätskeMängd + " liter "
+                                + v.getVätskeTyp().toLowerCase());
                 finnsNamnet = true;
                 break;
             }
