@@ -1,3 +1,7 @@
+package Inlamning1;
+
+import javax.swing.*;
+
 public class Palm extends Växt implements Vattning{
 
     public Palm(String namn, double längd, String vätskeTyp) {
@@ -13,5 +17,10 @@ public class Palm extends Växt implements Vattning{
     @Override
     public Double getVätskeMängd() {
         return vätskeMängd;
+    }
+
+    @Override
+    public String toString() {
+        return getNamn() + " behöver " + vätskeMängd + " liter " + getVätskeTyp();
     }
 }

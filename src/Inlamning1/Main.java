@@ -1,3 +1,5 @@
+package Inlamning1;
+
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -5,10 +7,10 @@ import java.util.List;
 
 public class Main {
     Main() {
-        Kaktus igge = new Kaktus("Igge", 20, "Mineralvatten");
-        Palm laura = new Palm("Laura", 5, "Kranvatten");
-        Köttis meatloaf = new Köttis("Meatloaf", 0.7, "Proteindryck");
-        Palm putte = new Palm("Putte", 1, "Kranvatten");
+        Kaktus igge = new Kaktus("Igge", 20, "mineralvatten");
+        Palm laura = new Palm("Laura", 5, "kranvatten");
+        Köttis meatloaf = new Köttis("Meatloaf", 0.7, "proteindryck");
+        Palm putte = new Palm("Putte", 1, "kranvatten");
 
         List<Växt> allaVäxter = new ArrayList<>();
         Collections.addAll(allaVäxter, igge, laura, meatloaf, putte);
@@ -26,9 +28,7 @@ public class Main {
         boolean finnsNamnet = false;
         for (Växt v: växt) {
             if (s.equalsIgnoreCase(v.getNamn())) {
-                JOptionPane.showMessageDialog(null,
-                        v.getNamn() + " behöver " + v.vätskeMängd + " liter "
-                                + v.getVätskeTyp().toLowerCase());
+                JOptionPane.showMessageDialog(null, v);
                 finnsNamnet = true;
                 break;
             }

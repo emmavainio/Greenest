@@ -1,3 +1,5 @@
+package Inlamning1;
+
 abstract class Växt {
     private String namn;
     private double längd;
@@ -32,5 +34,10 @@ abstract class Växt {
 
     public void setVätskeTyp(String vätskeTyp) {
         this.vätskeTyp = vätskeTyp;
+    }
+
+    @Override
+    public String toString() {
+        return namn + " behöver " + vätskeMängd + " liter " + vätskeTyp;
     }
 }
