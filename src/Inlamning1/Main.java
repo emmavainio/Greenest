@@ -7,10 +7,10 @@ import java.util.List;
 
 public class Main {
     Main() {
-        Kaktus igge = new Kaktus("Igge", 20, "mineralvatten");
-        Palm laura = new Palm("Laura", 5, "kranvatten");
-        Köttis meatloaf = new Köttis("Meatloaf", 0.7, "proteindryck");
-        Palm putte = new Palm("Putte", 1, "kranvatten");
+        Kaktus igge = new Kaktus("Igge", 20);
+        Palm laura = new Palm("Laura", 5);
+        Köttis meatloaf = new Köttis("Meatloaf", 0.7);
+        Palm putte = new Palm("Putte", 1);
 
         List<Växt> allaVäxter = new ArrayList<>();
         Collections.addAll(allaVäxter, igge, laura, meatloaf, putte);
@@ -22,7 +22,6 @@ public class Main {
             skrivUt(s.trim(), allaVäxter);
         }
     }
-
     public void skrivUt (String s, List<Växt> växt) {
         boolean finnsNamnet = false;
         for (Växt v: växt) {
@@ -37,7 +36,6 @@ public class Main {
                     "Det finns ingen växt med det namnet!");
         }
     }
-
     public static void main(String[] args) {
         Main huvudprogram = new Main();
     }
