@@ -19,12 +19,11 @@ public class Main {
             String s = JOptionPane.showInputDialog("Vilken växt ska vattnas?");
             if (s == null)
                 System.exit(0);
-            skrivUt(s, allaVäxter);
+            skrivUt(s.trim(), allaVäxter);
         }
     }
 
     public void skrivUt (String s, List<Växt> växt) {
-        s = s.trim();
         boolean finnsNamnet = false;
         for (Växt v: växt) {
             if (s.equalsIgnoreCase(v.getNamn())) {
@@ -34,7 +33,8 @@ public class Main {
             }
         }
         if (!finnsNamnet) {
-            System.out.println("Det finns ingen växt med det namnet!");
+            JOptionPane.showMessageDialog(null,
+                    "Det finns ingen växt med det namnet!");
         }
     }
 
