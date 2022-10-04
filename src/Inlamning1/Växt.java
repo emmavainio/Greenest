@@ -9,6 +9,8 @@ abstract class Växt implements Vattning{
         this.namn = namn;
         this.längd = längd;
     }
+
+    //Inkapsling
     public String getNamn() {
         return namn;
     }

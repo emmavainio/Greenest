@@ -26,7 +26,7 @@ public class Main {
         boolean finnsNamnet = false;
         for (Växt v: växt) {
             if (s.equalsIgnoreCase(v.getNamn())) {
-                JOptionPane.showMessageDialog(null, v);
+                JOptionPane.showMessageDialog(null, v); //Polymorfism
                 finnsNamnet = true;
                 break;
             }

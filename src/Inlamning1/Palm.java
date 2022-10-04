@@ -1,7 +1,5 @@
 package Inlamning1;
 
-import javax.swing.*;
-
 public class Palm extends Växt {
     private double basnivå = 0.5;
     private final String vätskeTyp = Vätsketyp.KRANVATTEN.getString();

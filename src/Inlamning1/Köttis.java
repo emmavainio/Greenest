@@ -3,7 +3,6 @@ package Inlamning1;
 import javax.swing.*;
 
 public class Köttis extends Växt {
-
     private final double basnivå = 0.1;
     private final double extraTillskott = 0.2;
     private final String vätskeTyp = Vätsketyp.PROTEINDRYCK.getString();
