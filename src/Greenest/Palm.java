@@ -1,4 +1,4 @@
-package Inlamning1;
+package Greenest;
 
 public class Palm extends Växt {
     private double basnivå = 0.5;
@@ -8,7 +8,7 @@ public class Palm extends Växt {
         super(namn, längd);
         setVätskeMängd();
     }
-
+    //Polymorfism
     @Override
     public void setVätskeMängd() {
         vätskeMängd = basnivå * getLängd();

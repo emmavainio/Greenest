@@ -1,8 +1,6 @@
-package Inlamning1;
+package Greenest;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PalmTest {
 
@@ -10,7 +8,6 @@ class PalmTest {
 
     @Test
     void testSetVätskeMängd() {
-        p.setVätskeMängd();
         assert (p.getVätskeMängd() == 1.5);
         assert (p.getVätskeMängd() != 1);
     }

@@ -1,4 +1,4 @@
-package Inlamning1;
+package Greenest;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class Main {
         boolean finnsNamnet = false;
         for (Växt v: växt) {
             if (s.equalsIgnoreCase(v.getNamn())) {
-                JOptionPane.showMessageDialog(null, v); //Polymorfism
+                JOptionPane.showMessageDialog(null, v);
                 finnsNamnet = true;
                 break;
             }

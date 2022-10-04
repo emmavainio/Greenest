@@ -1,15 +1,14 @@
-package Inlamning1;
+package Greenest;
 
 abstract class Växt implements Vattning{
-    private String namn;
-    private double längd;
+    private final String namn;
+    private final double längd;
     protected double vätskeMängd;
 
     public Växt(String namn, double längd) {
         this.namn = namn;
         this.längd = längd;
     }
-
     //Inkapsling
     public String getNamn() {
         return namn;

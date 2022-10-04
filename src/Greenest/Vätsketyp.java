@@ -1,4 +1,4 @@
-package Inlamning1;
+package Greenest;
 
 public enum Vätsketyp {
     KRANVATTEN ("kranvatten"),

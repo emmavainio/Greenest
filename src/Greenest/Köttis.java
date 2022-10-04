@@ -1,6 +1,4 @@
-package Inlamning1;
-
-import javax.swing.*;
+package Greenest;
 
 public class Köttis extends Växt {
     private final double basnivå = 0.1;
@@ -11,6 +9,7 @@ public class Köttis extends Växt {
         super(namn, längd);
         setVätskeMängd();
     }
+    //Polymorfism
     @Override
     public void setVätskeMängd() {
         vätskeMängd = basnivå + extraTillskott * getLängd();

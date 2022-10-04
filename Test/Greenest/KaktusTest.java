@@ -1,8 +1,6 @@
-package Inlamning1;
+package Greenest;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class KaktusTest {
 
@@ -10,7 +8,6 @@ class KaktusTest {
 
     @Test
     void setVätskeMängd() {
-        k.setVätskeMängd();
         assert (k.getVätskeMängd() == 2);
         assert (k.getVätskeMängd() != 1.5);
     }
