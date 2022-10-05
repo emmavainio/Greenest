@@ -1,14 +1,14 @@
 package Greenest;
 
-public enum Vätsketyp {
+public enum TypeOfLiquid {
     KRANVATTEN ("kranvatten"),
     PROTEINDRYCK ("proteindryck"),
     MINERALVATTEN ("mineralvatten");
-    private String vätskeTyp;
-    Vätsketyp (String s) {
-        vätskeTyp = s;
+    private String typeOfLiquid;
+    TypeOfLiquid(String s) {
+        typeOfLiquid = s;
     }
     String getString(){
-        return vätskeTyp;
+        return typeOfLiquid;
     }
 }
