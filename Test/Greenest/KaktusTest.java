@@ -8,8 +8,8 @@ class KaktusTest {
 
     @Test
     void setVätskeMängd() {
-        assert (k.getVätskeMängd() == 2);
-        assert (k.getVätskeMängd() != 1.5);
+        assert (k.getAmoutOfLiquid() == 2);
+        assert (k.getAmoutOfLiquid() != 1.5);
     }
 
     @Test

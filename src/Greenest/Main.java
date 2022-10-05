@@ -12,7 +12,7 @@ public class Main {
         Köttis meatloaf = new Köttis("Meatloaf", 0.7);
         Palm putte = new Palm("Putte", 1);
 
-        List<Växt> allaVäxter = new ArrayList<>();
+        List<Plant> allaVäxter = new ArrayList<>();
         Collections.addAll(allaVäxter, igge, laura, meatloaf, putte);
 
         while (true) {
@@ -24,9 +24,9 @@ public class Main {
             printVäxt(index, allaVäxter);
         }
     }
-    public void skrivUt (String s, List<Växt> växt) {
+    public void skrivUt (String s, List<Plant> plant) {
         boolean finnsNamnet = false;
-        for (Växt v: växt) {
+        for (Plant v: plant) {
             if (s.equalsIgnoreCase(v.getName())) {
                 JOptionPane.showMessageDialog(null, v);
                 finnsNamnet = true;
@@ -38,16 +38,16 @@ public class Main {
                     "Det finns ingen växt med det namnet!");
         }
     }
-    public int getIndex (String s, List<Växt> växt) {
-        for (Växt v: växt) {
+    public int getIndex (String s, List<Plant> plant) {
+        for (Plant v: plant) {
             if (s.equalsIgnoreCase(v.getName()))
-                return växt.indexOf(v);
+                return plant.indexOf(v);
         }
         return -1;
     }
-    public void printVäxt (int index, List<Växt> växt) {
+    public void printVäxt (int index, List<Plant> plant) {
         if (index >= 0)
-            JOptionPane.showMessageDialog(null, växt.get(index));
+            JOptionPane.showMessageDialog(null, plant.get(index));
         else
             JOptionPane.showMessageDialog(null, "Det finns ingen växt med det namnet!");
     }

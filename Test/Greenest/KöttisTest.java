@@ -8,8 +8,8 @@ class KöttisTest {
 
     @Test
     void testSetVätskeMängd() {
-        assert (k.getVätskeMängd() == 0.5);
-        assert (k.getVätskeMängd() != 1.5);
+        assert (k.getAmoutOfLiquid() == 0.5);
+        assert (k.getAmoutOfLiquid() != 1.5);
     }
 
     @Test

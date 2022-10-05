@@ -8,8 +8,8 @@ class PalmTest {
 
     @Test
     void testSetVätskeMängd() {
-        assert (p.getVätskeMängd() == 1.5);
-        assert (p.getVätskeMängd() != 1);
+        assert (p.getAmoutOfLiquid() == 1.5);
+        assert (p.getAmoutOfLiquid() != 1);
     }
 
     @Test

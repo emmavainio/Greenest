@@ -1,6 +1,6 @@
 package Greenest;
 
-public class Kaktus extends Växt {
+public class Kaktus extends Plant {
     private final double basnivå = 2;
     private final String vätskeTyp = Vätsketyp.MINERALVATTEN.getString();
     public Kaktus(String namn, double längd) {
@@ -10,10 +10,10 @@ public class Kaktus extends Växt {
     //Polymorfism
     @Override
     public void setVätskeMängd() {
-        vätskeMängd = basnivå;
+        amoutOfLiquid = basnivå;
     }
     @Override
     public String toString() {
-        return getName() + " behöver " + getVätskeMängd() + " cl " + vätskeTyp;
+        return getName() + " behöver " + getAmoutOfLiquid() + " cl " + vätskeTyp;
     }
 }
