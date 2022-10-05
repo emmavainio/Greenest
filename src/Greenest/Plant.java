@@ -3,7 +3,7 @@ package Greenest;
 abstract class Plant implements AmountOfLiquid {
     private final String name;
     private final double length;
-    protected double amoutOfLiquid;
+    protected double amountOfLiquid;
 
     public Plant(String name, double length) {
         this.name = name;
@@ -18,6 +18,6 @@ abstract class Plant implements AmountOfLiquid {
     }
     @Override
     public Double getAmountOfLiquid() {
-        return amoutOfLiquid;
+        return amountOfLiquid;
     }
 }

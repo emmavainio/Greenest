@@ -11,9 +11,8 @@ public class Palm extends Plant {
     //Polymorfism
     @Override
     public void setAmountOfLiquid() {
-        amoutOfLiquid = baseLevel * getLength();
+        amountOfLiquid = baseLevel * getLength();
     }
-
     @Override
     public String toString() {
         return getName() + " behöver " + String.format("%.2f", getAmountOfLiquid()) + " l " + typeOfLiquid;

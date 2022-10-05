@@ -12,7 +12,7 @@ package Greenest;
     //Polymorfism
     @Override
     public void setAmountOfLiquid() {
-        amoutOfLiquid = baseLevel + extraSupplement * getLength();
+        amountOfLiquid = baseLevel + extraSupplement * getLength();
     }
     @Override
     public String toString() {

@@ -10,7 +10,7 @@ public class Cactus extends Plant {
     //Polymorfism
     @Override
     public void setAmountOfLiquid() {
-        amoutOfLiquid = baseLevel;
+        amountOfLiquid = baseLevel;
     }
     @Override
     public String toString() {
