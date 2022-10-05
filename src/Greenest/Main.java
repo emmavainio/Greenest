@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Main {
     Main() {
-        Kaktus igge = new Kaktus("Igge", 20);
+        Cactus igge = new Cactus("Igge", 20);
         Palm laura = new Palm("Laura", 5);
         Köttis meatloaf = new Köttis("Meatloaf", 0.7);
         Palm putte = new Palm("Putte", 1);

@@ -17,7 +17,7 @@ abstract class Plant implements Vattning{
         return length;
     }
     @Override
-    public Double getAmoutOfLiquid() {
+    public Double getAmountOfLiquid() {
         return amoutOfLiquid;
     }
 }

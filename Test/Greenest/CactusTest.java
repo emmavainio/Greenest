@@ -2,14 +2,14 @@ package Greenest;
 
 import org.junit.jupiter.api.Test;
 
-class KaktusTest {
+class CactusTest {
 
-    Kaktus k = new Kaktus("Igge", 1);
+    Cactus k = new Cactus("Igge", 1);
 
     @Test
     void setVätskeMängd() {
-        assert (k.getAmoutOfLiquid() == 2);
-        assert (k.getAmoutOfLiquid() != 1.5);
+        assert (k.getAmountOfLiquid() == 2);
+        assert (k.getAmountOfLiquid() != 1.5);
     }
 
     @Test

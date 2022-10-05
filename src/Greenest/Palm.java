@@ -6,16 +6,16 @@ public class Palm extends Plant {
 
     public Palm(String name, double length) {
         super(name, length);
-        setVätskeMängd();
+        setAmountOfLiquid();
     }
     //Polymorfism
     @Override
-    public void setVätskeMängd() {
+    public void setAmountOfLiquid() {
         amoutOfLiquid = baseLevel * getLength();
     }
 
     @Override
     public String toString() {
-        return getName() + " behöver " + getAmoutOfLiquid() + " l " + typeOfLiquid;
+        return getName() + " behöver " + getAmountOfLiquid() + " l " + typeOfLiquid;
     }
 }
