@@ -19,24 +19,24 @@ public class Main {
             String input = JOptionPane.showInputDialog("Vilken växt ska vattnas?");
             if (input == null)
                 System.exit(0);
-            skrivUt(input.trim(), allPlants);
+            printPlant(input.trim(), allPlants);
         }
     }
-    public void skrivUt (String s, List<Plant> plant) {
-        boolean finnsNamnet = false;
+    public void printPlant(String s, List<Plant> plant) {
+        boolean nameFound = false;
         for (Plant v: plant) {
             if (s.equalsIgnoreCase(v.getName())) {
                 JOptionPane.showMessageDialog(null, v);
-                finnsNamnet = true;
+                nameFound = true;
                 break;
             }
         }
-        if (!finnsNamnet) {
+        if (!nameFound) {
             JOptionPane.showMessageDialog(null,
                     "Det finns ingen växt med det namnet!");
         }
     }
     public static void main(String[] args) {
-        Main huvudprogram = new Main();
+        new Main();
     }
 }
