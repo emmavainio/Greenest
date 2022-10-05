@@ -1,18 +1,18 @@
 package Greenest;
 
 public class Köttis extends Plant {
-    private final double basnivå = 0.1;
-    private final double extraTillskott = 0.2;
+    private final double baseLevel = 0.1;
+    private final double extraSupplement = 0.2;
     private final String vätskeTyp = Vätsketyp.PROTEINDRYCK.getString();
 
-    public Köttis(String namn, double längd) {
-        super(namn, längd);
+    public Köttis(String name, double length) {
+        super(name, length);
         setVätskeMängd();
     }
     //Polymorfism
     @Override
     public void setVätskeMängd() {
-        amoutOfLiquid = basnivå + extraTillskott * getLength();
+        amoutOfLiquid = baseLevel + extraSupplement * getLength();
     }
     @Override
     public String toString() {

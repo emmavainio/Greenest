@@ -1,21 +1,21 @@
 package Greenest;
 
 public class Palm extends Plant {
-    private double basnivå = 0.5;
-    private final String vätskeTyp = Vätsketyp.KRANVATTEN.getString();
+    private double baseLevel = 0.5;
+    private final String typeOfLiquid = Vätsketyp.KRANVATTEN.getString();
 
-    public Palm(String namn, double längd) {
-        super(namn, längd);
+    public Palm(String name, double length) {
+        super(name, length);
         setVätskeMängd();
     }
     //Polymorfism
     @Override
     public void setVätskeMängd() {
-        amoutOfLiquid = basnivå * getLength();
+        amoutOfLiquid = baseLevel * getLength();
     }
 
     @Override
     public String toString() {
-        return getName() + " behöver " + getAmoutOfLiquid() + " l " + vätskeTyp;
+        return getName() + " behöver " + getAmoutOfLiquid() + " l " + typeOfLiquid;
     }
 }
