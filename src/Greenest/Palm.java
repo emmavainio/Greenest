@@ -16,6 +16,6 @@ public class Palm extends Växt {
 
     @Override
     public String toString() {
-        return getNamn() + " behöver " + getVätskeMängd() + " l " + vätskeTyp;
+        return getName() + " behöver " + getVätskeMängd() + " l " + vätskeTyp;
     }
 }

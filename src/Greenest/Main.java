@@ -16,16 +16,18 @@ public class Main {
         Collections.addAll(allaVäxter, igge, laura, meatloaf, putte);
 
         while (true) {
-            String s = JOptionPane.showInputDialog("Vilken växt ska vattnas?");
-            if (s == null)
+            String input = JOptionPane.showInputDialog("Vilken växt ska vattnas?");
+            if (input == null)
                 System.exit(0);
-            skrivUt(s.trim(), allaVäxter);
+            //skrivUt(input.trim(), allaVäxter);
+            int index = getIndex(input.trim(), allaVäxter);
+            printVäxt(index, allaVäxter);
         }
     }
     public void skrivUt (String s, List<Växt> växt) {
         boolean finnsNamnet = false;
         for (Växt v: växt) {
-            if (s.equalsIgnoreCase(v.getNamn())) {
+            if (s.equalsIgnoreCase(v.getName())) {
                 JOptionPane.showMessageDialog(null, v);
                 finnsNamnet = true;
                 break;
@@ -35,6 +37,19 @@ public class Main {
             JOptionPane.showMessageDialog(null,
                     "Det finns ingen växt med det namnet!");
         }
+    }
+    public int getIndex (String s, List<Växt> växt) {
+        for (Växt v: växt) {
+            if (s.equalsIgnoreCase(v.getName()))
+                return växt.indexOf(v);
+        }
+        return -1;
+    }
+    public void printVäxt (int index, List<Växt> växt) {
+        if (index >= 0)
+            JOptionPane.showMessageDialog(null, växt.get(index));
+        else
+            JOptionPane.showMessageDialog(null, "Det finns ingen växt med det namnet!");
     }
     public static void main(String[] args) {
         Main huvudprogram = new Main();

@@ -14,6 +14,6 @@ public class Kaktus extends Växt {
     }
     @Override
     public String toString() {
-        return getNamn() + " behöver " + getVätskeMängd() + " cl " + vätskeTyp;
+        return getName() + " behöver " + getVätskeMängd() + " cl " + vätskeTyp;
     }
 }

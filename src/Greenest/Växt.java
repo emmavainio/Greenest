@@ -1,17 +1,17 @@
 package Greenest;
 
 abstract class Växt implements Vattning{
-    private final String namn;
+    private final String name;
     private final double längd;
     protected double vätskeMängd;
 
     public Växt(String namn, double längd) {
-        this.namn = namn;
+        this.name = namn;
         this.längd = längd;
     }
     //Inkapsling
-    public String getNamn() {
-        return namn;
+    public String getName() {
+        return name;
     }
     public double getLängd() {
         return längd;
