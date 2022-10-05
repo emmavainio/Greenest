@@ -1,6 +1,6 @@
 package Greenest;
 
-abstract class Plant implements Vattning{
+abstract class Plant implements AmountOfLiquid {
     private final String name;
     private final double length;
     protected double amoutOfLiquid;

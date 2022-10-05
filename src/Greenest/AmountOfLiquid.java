@@ -1,6 +1,6 @@
 package Greenest;
 
-public interface Vattning {
+public interface AmountOfLiquid {
     void setAmountOfLiquid();
     Double getAmountOfLiquid();
 }
