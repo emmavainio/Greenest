@@ -16,6 +16,6 @@ package Greenest;
     }
     @Override
     public String toString() {
-        return getName() + " behöver " + getAmountOfLiquid() + " l " + typeOfLiquid;
+        return getName() + " behöver " + String.format("%.2f", getAmountOfLiquid()) + " l " + typeOfLiquid;
     }
 }

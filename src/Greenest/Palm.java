@@ -1,7 +1,7 @@
 package Greenest;
 
 public class Palm extends Plant {
-    private double baseLevel = 0.5;
+    private final double baseLevel = 0.5;
     private final String typeOfLiquid = TypeOfLiquid.KRANVATTEN.getString();
 
     public Palm(String name, double length) {
@@ -16,6 +16,6 @@ public class Palm extends Plant {
 
     @Override
     public String toString() {
-        return getName() + " behöver " + getAmountOfLiquid() + " l " + typeOfLiquid;
+        return getName() + " behöver " + String.format("%.2f", getAmountOfLiquid()) + " l " + typeOfLiquid;
     }
 }

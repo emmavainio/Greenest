@@ -12,16 +12,14 @@ public class Main {
         Carnivorous meatloaf = new Carnivorous("Meatloaf", 0.7);
         Palm putte = new Palm("Putte", 1);
 
-        List<Plant> allaVäxter = new ArrayList<>();
-        Collections.addAll(allaVäxter, igge, laura, meatloaf, putte);
+        List<Plant> allPlants = new ArrayList<>();
+        Collections.addAll(allPlants, igge, laura, meatloaf, putte);
 
         while (true) {
             String input = JOptionPane.showInputDialog("Vilken växt ska vattnas?");
             if (input == null)
                 System.exit(0);
-            //skrivUt(input.trim(), allaVäxter);
-            int index = getIndex(input.trim(), allaVäxter);
-            printVäxt(index, allaVäxter);
+            skrivUt(input.trim(), allPlants);
         }
     }
     public void skrivUt (String s, List<Plant> plant) {
@@ -37,19 +35,6 @@ public class Main {
             JOptionPane.showMessageDialog(null,
                     "Det finns ingen växt med det namnet!");
         }
-    }
-    public int getIndex (String s, List<Plant> plant) {
-        for (Plant v: plant) {
-            if (s.equalsIgnoreCase(v.getName()))
-                return plant.indexOf(v);
-        }
-        return -1;
-    }
-    public void printVäxt (int index, List<Plant> plant) {
-        if (index >= 0)
-            JOptionPane.showMessageDialog(null, plant.get(index));
-        else
-            JOptionPane.showMessageDialog(null, "Det finns ingen växt med det namnet!");
     }
     public static void main(String[] args) {
         Main huvudprogram = new Main();

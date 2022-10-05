@@ -14,6 +14,6 @@ public class Cactus extends Plant {
     }
     @Override
     public String toString() {
-        return getName() + " behöver " + getAmountOfLiquid() + " cl " + typeOfLiquid;
+        return getName() + " behöver " + String.format("%.0f", getAmountOfLiquid()) + " cl " + typeOfLiquid;
     }
 }
