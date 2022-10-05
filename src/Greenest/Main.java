@@ -9,7 +9,7 @@ public class Main {
     Main() {
         Cactus igge = new Cactus("Igge", 20);
         Palm laura = new Palm("Laura", 5);
-        Köttis meatloaf = new Köttis("Meatloaf", 0.7);
+        Carnivorous meatloaf = new Carnivorous("Meatloaf", 0.7);
         Palm putte = new Palm("Putte", 1);
 
         List<Plant> allaVäxter = new ArrayList<>();

@@ -2,9 +2,9 @@ package Greenest;
 
 import org.junit.jupiter.api.Test;
 
-class KöttisTest {
+class CarnivorousTest {
 
-    Köttis k = new Köttis("Meatloaf", 2);
+    Carnivorous k = new Carnivorous("Meatloaf", 2);
 
     @Test
     void testSetVätskeMängd() {
