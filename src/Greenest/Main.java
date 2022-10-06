@@ -22,11 +22,11 @@ public class Main {
             printPlant(input.trim(), allPlants);
         }
     }
-    public void printPlant(String s, List<Plant> plant) {
+    public void printPlant(String s, List<Plant> allPlants) {
         boolean nameFound = false;
-        for (Plant v: plant) {
-            if (s.equalsIgnoreCase(v.getName())) {
-                JOptionPane.showMessageDialog(null, v);
+        for (Plant plant: allPlants) {
+            if (s.equalsIgnoreCase(plant.getName())) {
+                JOptionPane.showMessageDialog(null, plant);
                 nameFound = true;
                 break;
             }
